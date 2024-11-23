@@ -1,0 +1,160 @@
+/*import customized font family*/
+@font-face {
+    font-family: "AvenirBlack";
+    src: url('../../website/fonts/Avenir Black.ttf') format('truetype');
+    ;
+}
+
+body {
+    background-color: #eaeaea;
+    font-family: AvenirBlack, Arial, Helvetica, sans-serif;
+}
+
+#logo>img {
+    width: 15%;
+}
+
+input {
+    height: 2.5em;
+    border: 1.5px solid lightgray;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+label {
+    font-size: 1em;
+}
+
+button {
+    font-size: 0.9em;
+}
+
+#logintxt {
+    color: black;
+}
+
+p.footer {
+    font-size: 1em;
+}
+
+#logintxt:hover {
+    color: red;
+}
+
+/* input textfield*/
+input {
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+/* input textfield placeholder*/
+input::placeholder {
+    opacity: 60%;
+    font-style: italic;
+}
+
+/* role select "select a role"*/
+select#roleSelect {
+    /* opacity: 60%; */
+    font-family: Tahoma, Helvetica, sans-serif;
+    /* font-style: italic; */
+    font-size: 1em;
+}
+
+select#roleSelect>option#selection {
+    opacity: 60%;
+    color: #aaaaaa;
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+select#roleSelect>option.roleOption {
+    opacity: 100%;
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.custom-select {
+    background: url('../../server/images/menuArrow.svg') no-repeat right;
+}
+
+.rotate {
+    background: url('../../server/images/menuArrow_rotated.svg') no-repeat right;
+}
+
+div.errorMessage>span {
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-style: italic;
+    color: red;
+    font-size: 0.9em;
+}
+
+#registerBtn {
+    font-size: 1.05em;
+}
+
+
+/*popup background for response for successful registration*/
+.popup-background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display:none;
+    opacity: 0;
+    transition: all 0.5 linear;
+    -webkit-transition: all 0.5 linear;
+    -moz-transition: all 0.5 linear;
+    -o-transition: all 0.5 linear;
+    z-index: 9998;
+}
+
+/*popup visible class*/
+.visible {
+    display:block !important;
+    opacity: 0.8 !important;
+}
+
+/*popup message class for response for successful registration*/
+.dialog {
+    z-index: 9999;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    display:none;
+    opacity: 0;
+    transition: all 0.5 linear;
+    -webkit-transition: all 0.5 linear;
+    -moz-transition: all 0.5 linear;
+    -o-transition: all 0.5 linear;
+}
+
+/*popup message visible class*/
+.dialogAppear {
+    animation: createBox .2s;
+    display:block !important;
+    opacity: 1 !important;
+}
+
+/*keyframes of popup animation*/
+@keyframes createBox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+/*inner message for successful registration*/
+.innerDialog {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 100%;
+    height: 100%;
+}

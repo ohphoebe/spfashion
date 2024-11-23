@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <!--meta data: Charset used-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta data: Responsive Website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta data: Description of Website-->
+    <meta name="description" content="Login to Shop the Latest Collection in SP Fashion">
+    <!--meta data: Keywords of Website-->
+    <meta name="keywords" content="login, fashion, sp">
+    <!--meta data: Favicon of Website-->
+    <link rel="icon" type="image/png" href="../../server/images/favicon-01.png">
+    <title>Login</title>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--javascript-->
+    <script src="login.js" type="text/javascript"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--additional styling-->
+    <link href="login.css" rel="stylesheet" />
+    <!--font awesome link css-->
+    <link href="../../website/css/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../website/css/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../website/css/fontawesome/css/solid.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid w-100 m-0 p-0">
+    <main class="row d-flex flex-row text-center justify-content-between w-100 m-0 p-0  align-items-center ">
+        <!--header image-->
+        <div id="headerImg" class="col-lg-6 col-sm-12 m-0 p-0">
+            <img src="../../server/images/index1.jpg" class="w-100">
+        </div>
+        <!--login-->
+        <div id="loginForm" class="col-lg-6 col-sm-12 m-0 p-0 d-flex flex-column ">
+            <!--logo-->
+            <div class="row justify-content-center pt-5 pb-5 m-0 py-0 w-100 ">
+                <div id="logo" class="text-center">
+                    <img src="../../server/images/logo_colour.png" alt="sp fashion" class="pt-2 pb-2 ">
+                </div>
+            </div>
+            <div class="row justify-content-center text-center w-100 m-0 p-0 pb-2 mb-5">
+                <form class="bg-white rounded w-75 m-0 p-0" action="POST" url="../../website/listings/listings.html" id="loginForm">
+                    <div id="login" class="text-center">
+                        <h3 class="w-100 m-0 p-0 my-5">Login</h3>
+                        <!-- email -->
+                        <label for="email" class="w-75 text-left m-0 p-0 mb-2 ">Email*</label><br>
+                        <input type="email" class="w-75 lh-lg rounded" id="email" placeholder="Enter your email" class="form-control" autocomplete="off" required>
+                        <div class="row errorMessage justify-content-center w-100 text-left m-0 p-0 mb-2 mt-1 " id="emailError"></div>
+                        <!-- password -->
+                        <label for="password" class="w-75 text-left m-0 p-0 mt-2 mb-2">Password*</label><br>
+                        <input type="password" class="w-75 lh-lg rounded" id="password" placeholder="Enter your password" class="form-control" autocomplete="off" required>
+                        <div class="row errorMessage justify-content-center w-100 text-left m-0 p-0 mb-2 mt-1" id="passwordError"></div>
+                        <!--required fields-->
+                        <div class="row justify-content-center w-100 text-left m-0 p-0">
+                            <p class="w-75 footer">*required fields</p></div>
+                        <!-- login btn -->
+                        <button type="button" class="btn btn-danger w-75 pb-2 mb-3" id="loginBtn">Login</button>
+                        <!--Redirect to register-->
+                        <p class="mt-2 mb-5">Don’t have an account? <a href="../register/register.html"
+                                id="registertxt"><u>Register</u></a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+
+</html>

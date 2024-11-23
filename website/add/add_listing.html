@@ -1,0 +1,231 @@
+<!-- Student Name: ONG KOK PIN, Admin No: P7474462 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fashion Website">
+    <meta name="Keywords" content="fashion, clothes, e-commerce">
+    <title>Add Listing</title>
+    <!-- Import Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Import Bootstrap Javascript -->
+    <script src="../bootstrap/jquery/jquery-3.7.0.min.js"></script>
+    <script src="../bootstrap/popper/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Add listing script -->
+    <script src="add_listing.js" defer></script>
+    <!-- Add listing style -->
+    <link rel="stylesheet" href="add_listing.css">
+    
+    <!-- Member code -->
+    <link href="../../website/css/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../website/css/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../website/css/fontawesome/css/solid.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <!-- Member code, did some changes -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <nav class="navbar">
+            <a class="navbar-brand ps-5" href="../products/products.html" id="logo">
+                <img src="../../server/images/logo_white.png" alt="sp fashion" class="pt-0 pb-0">
+            </a>
+        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pe-3">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../products/products.html"><i class="fa-regular fa-box-open"></i> Products
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="navLogs">
+                    <a class="nav-link" href="../logs/logs.html" id="logs"><i class="fa-regular fa-file-lines"></i>
+                        Logs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../login/login.html" id="logout"><i
+                            class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Logout</a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 mt-5">
+            <div class="col-lg-9 col-md-9 col-sm-9">
+                <h4>Add Clothing Product</h4> 
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 mt-2">
+                <button id="ToEdit" type="button" class="bstyle1 btn btn-danger float-end">To Edit Product Page</button>
+            </div>
+        </div>
+
+        <!-- was-validated class to validate user input-->
+        <form action="" id="ToSend" method="" class="was-validated">
+
+            <div class="form-group row mt-1">
+                <fieldset class="col-lg-12 col-md-12 col-sm-12">
+
+                    <div class="row">
+
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+
+                            <h5 id="Dataheader">Enter Clothing Product Detail Below</h5>
+
+                            <!-- Div Input clothing detail -->
+                            <div class="row">
+
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <!-- Div Input clothing name -->
+                                    <div class="row">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <label for="name">Name:</label>
+                                        </div>
+
+                                        <div class="col-lg-10 col-md-10 col-sm-10">
+                                            <input type="text" class="form-control" id="name" name="ProductName" maxlength="45"
+                                                placeholder="" required>
+                                            <div class="valid-feedback"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Div Input image file -->
+                                    <div class="row mt-2">
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <label for="ImageFile">Input Image File:</label>
+                                        </div>
+                                        <div class="col-lg-10 col-md-10 col-sm-10">
+                                            <input type="file" class="form-control" name="ImageName" id="ImageFile" accept="image/png, image/gif, image/jpeg" required/>
+                                        </div>
+                                    </div>
+                                    <!-- Div Input for category -->
+                                    <div class="row mt-2">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <label for="categoryID">Select Category:</label>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-3 col-sm-3">
+                                            <select class="form-control custom-select" id="categoryID" name="catID" required>
+                                                <option value="1" selected>Shirts</option>
+                                                <option value="2">Pants</option>
+                                                <option value="3">Jackets</option>
+                                            </select>
+                                            <!-- <input type="text" class="form-control" id="categoryID" name="catID"
+                                                placeholder="Numeric Digits" pattern="^(0|[1-9][0-9]*)$" required>
+                                            <div class="valid-feedback"></div> -->
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Div Input for description -->
+                                    <div class="row mt-2 mb-2">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <label for="Description">Description:</label>
+                                        </div>
+
+                                        <div class="col-lg-10 col-md-10 col-sm-10">
+                                            <input type="text" class="form-control" id="Description" name="ProductDes" maxlength="250"
+                                                placeholder="" required>
+                                            <div class="valid-feedback"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Div Input for quantity and price -->
+                                    <div class="row mt-2 mb-2">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <label for="Quantity">Quantity:</label>
+                                        </div>
+                                        <!-- Input text for quantity -->
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <input type="number" class="form-control" id="Quantity" name="ProductQ" step="1" min="0" max="9999999"
+                                                placeholder="Numeric Digits" pattern="^(0|[1-9][0-9]*)$" required>
+                                            <div class="valid-feedback"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Div Input for quantity and price -->
+                                    <div class="row mt-2 mb-2">
+
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <label for="Price">Price:</label>
+                                        </div>
+                                        <!-- Input text for price -->
+                                        <div class="col-lg-3=4 col-md-4 col-sm-4">
+                                            <input type="number" class="form-control" id="Price" name="ProductPrice" step="0.01" min="0" max="999.99"
+                                                placeholder="000.00" pattern="^(?!0*(\.0+)?$)(\d{1,3}(\.\d{1,2})?)?$" required>
+                                            <div class="valid-feedback"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <h5>Product Image</h5>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="card w-100">
+                                    <img id="image-placeholder" src="productImage.jpg" alt="Product">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Div for submit and reset button-->
+                    <div>
+                        <button class="bstyle2 btn btn-danger" type="submit">Submit</button>
+                        <button id="Toclear" class="bstyle2 btn btn-danger" type="reset">Clear</button>
+                    </div>
+
+                </fieldset>
+            </div>
+        </form>
+
+        <!-- Response Message Modal -->
+        <div class="modal fade" id="ResponseModal" tabindex="-1" aria-labelledby="ResponseModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="ResponseModalLabel">SP Fashion Message</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalMessageContent"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

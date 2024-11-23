@@ -1,0 +1,62 @@
+
+/*import customized font family*/
+@font-face {
+    font-family: "AvenirBlack";
+    src: url('../../website/fonts/Avenir Black.ttf') format('truetype');
+    ;
+}
+
+body {
+    background-color: #eaeaea;
+    font-family: AvenirBlack, Arial, Helvetica, sans-serif;
+}
+
+#logo > img {
+    width: 17%;
+}
+
+input{
+    height: 2.5em;
+    border: 1.5px solid lightgray;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+label {
+    font-size: 1em;
+}
+
+button {
+    font-size: 1em;
+}
+
+
+#registertxt {
+    color: black;
+}
+
+#registertxt:hover {
+    color: red;
+}
+
+/* input textfield*/
+input {
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+/* input textfield placeholder*/
+input::placeholder {
+    opacity: 60%;
+    font-style: italic;
+
+}
+
+div.errorMessage>span {
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-style: italic;
+    color: red;
+}
+
+#loginBtn {
+    font-size:1.2em;
+}

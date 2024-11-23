@@ -1,0 +1,47 @@
+/*import customized font family*/
+@font-face {
+    font-family: "AvenirBlack";
+    src: url('../../website/fonts/Avenir Black.ttf') format('truetype');
+    ;
+}
+
+body {
+    font-family: AvenirBlack, Arial, Helvetica, sans-serif;
+}
+
+a#logo > img {
+    width: 2.3em;
+}
+
+nav#navbar {
+    background-color: black !important;
+}
+
+#listingBox {
+    width: 90% !important;
+}
+
+
+/*table*/
+table#listingTable {
+    overflow:hidden;
+    border-radius: 3px;
+    border:1px solid lightgray;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+td, th {
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-style: normal;
+    border: none;
+}
+
+td.text-center.justify-items-end i {
+    font-size: 1.3em;
+}
+
+td.text-center.justify-items-end i:hover {
+    opacity: 50%;
+    cursor: pointer;
+}

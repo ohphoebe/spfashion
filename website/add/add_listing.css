@@ -1,0 +1,56 @@
+/* Student Name: ONG KOK PIN, Admin No: P7474462 */
+@charset "utf-8";
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url('../../website/fonts/Avenir Black.ttf') format('truetype');
+    ;
+}
+
+body {
+    font-family: AvenirBlack, Arial, Helvetica, sans-serif;
+}
+
+/* form fieldset and legend styles */
+fieldset {
+    border:1px solid lightgrey;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.bstyle2 {
+    
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;  
+    margin-bottom: 25px; 
+}
+
+h5{
+    padding: 25px 15px 10px 0px;
+    font-size: 1.2em;
+    position: relative;
+    margin-right: auto;
+}
+
+h4{
+    padding: 15px 15px 10px 0px;
+    font-size: 1.6em;
+    position: relative;
+    margin-right: auto;
+}
+
+/* Member code */
+
+a#logo > img {
+    width: 2.3em;
+}
+
+nav#navbar {
+    background-color: black !important;
+}
+
+
+
+
